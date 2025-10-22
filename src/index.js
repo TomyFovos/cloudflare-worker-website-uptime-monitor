@@ -9,13 +9,9 @@ const config = {
     'https://drawio.fovos.jp',
     'https://influx.fovos.jp',
     'https://speed.fovos.jp',
-    'https://wol.飛鳥.jp',
-    'https://飛鳥.jp',
-    'https://xn--x41a433c.飛鳥.jp',
     'https://pg.fovos.jp',
     'https://postgres.fovos.jp',
     'https://metabase.fovos.jp',
-    'https://link.飛鳥.jp',
     'https://coolify.fovos.jp',
     'https://fovos.jp'
   ],
