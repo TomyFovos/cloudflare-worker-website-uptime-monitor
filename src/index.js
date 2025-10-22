@@ -2,17 +2,40 @@ import { EmailMessage } from 'cloudflare:email';
 import { createMimeMessage } from 'mimetext';
 
 const config = {
-	websites: ['https://github.com/llegomark/', 'https://github.com/'],
-	emailInterval: 60 * 60 * 1000,
-	discordReportInterval: 5 * 60 * 1000,
-	maxRetries: 3,
-	retryDelayBase: 5000,
-	retryDelayExponent: 2,
-	senderName: 'Website Uptime Monitor',
-	senderEmail: '',
-	recipientEmail: '',
-	emailSubjectPrefix: '[Uptime Monitor]',
-	testMode: false,
+  websites: [
+    'https://archive.fovos.jp',
+    'https://cloud.fovos.jp',
+    'https://dashbord.fovos.jp',
+    'https://drawio.fovos.jp',
+    'https://influx.fovos.jp',
+    'https://phobos.fovos.jp',
+    'https://speed.fovos.jp',
+    'https://vscode.fovos.jp',
+    'https://wol.飛鳥.jp',
+    'https://飛鳥.jp',
+    'https://xn--x41a433c.飛鳥.jp',
+    'https://deimos.fovos.jp',
+    'https://mars.fovos.jp',
+    'https://pg.fovos.jp',
+    'https://postgres.fovos.jp',
+    'https://ssh.fovos.jp',
+    'https://metabase.fovos.jp',
+    'https://n8n.fovos.jp',
+    'https://link.飛鳥.jp',
+    'https://coolify.fovos.jp',
+    'https://fovos.jp'
+  ],
+
+  emailInterval: 36000000,             // 10時間ごとに状態レポートを送信
+  discordReportInterval: 3600000,       // Discord通知を60分ごとに実行
+  maxRetries: 3,                       // 接続失敗時の再試行回数
+  retryDelayBase: 5000,                // 再試行間隔のベース（5秒）
+  retryDelayExponent: 2,               // 再試行間隔の指数（指数バックオフ）
+  senderName: 'TrueNAS Monitor',      // 送信者名
+  senderEmail: 'your-email@example.com', // 通知メール送信元
+  recipientEmail: 'alert@example.com',   // 通知メール送信先
+  emailSubjectPrefix: '[FOVOS Monitor]', // メール件名プレフィックス
+  testMode: false                      // テストモード無効
 };
 
 async function checkWebsiteUptime(scheduledTime, env) {
