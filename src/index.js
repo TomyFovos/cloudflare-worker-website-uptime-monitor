@@ -10,7 +10,6 @@ const config = {
     'https://influx.fovos.jp',
     'https://speed.fovos.jp',
     'https://pg.fovos.jp',
-    'https://postgres.fovos.jp',
     'https://metabase.fovos.jp',
     'https://coolify.fovos.jp',
     'https://fovos.jp'
