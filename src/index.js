@@ -10,17 +10,13 @@ const config = {
     'https://influx.fovos.jp',
     'https://phobos.fovos.jp',
     'https://speed.fovos.jp',
-    'https://vscode.fovos.jp',
     'https://wol.飛鳥.jp',
     'https://飛鳥.jp',
     'https://xn--x41a433c.飛鳥.jp',
     'https://deimos.fovos.jp',
-    'https://mars.fovos.jp',
     'https://pg.fovos.jp',
     'https://postgres.fovos.jp',
-    'https://ssh.fovos.jp',
     'https://metabase.fovos.jp',
-    'https://n8n.fovos.jp',
     'https://link.飛鳥.jp',
     'https://coolify.fovos.jp',
     'https://fovos.jp'
@@ -32,8 +28,8 @@ const config = {
   retryDelayBase: 5000,                // 再試行間隔のベース（5秒）
   retryDelayExponent: 2,               // 再試行間隔の指数（指数バックオフ）
   senderName: 'TrueNAS Monitor',      // 送信者名
-  senderEmail: 'your-email@example.com', // 通知メール送信元
-  recipientEmail: 'alert@example.com',   // 通知メール送信先
+  senderEmail: 'atsoumkya@gmail.com', // 通知メール送信元
+  recipientEmail: 'h.yoshitomi.a.s@gmail.com',   // 通知メール送信先
   emailSubjectPrefix: '[FOVOS Monitor]', // メール件名プレフィックス
   testMode: false                      // テストモード無効
 };
