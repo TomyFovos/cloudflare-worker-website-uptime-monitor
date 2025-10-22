@@ -5,7 +5,7 @@ workers_dev = true
 node_compat = true
 
 kv_namespaces = [
-  { binding = "your-kv-namespace", id = "123456789000000" }
+  { binding = "cloudflare_monitor", id = "8612ae0527ea45e9a7d4cb2cc597908b" }
 ]
 
 send_email = [
